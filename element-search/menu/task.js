@@ -1,3 +1,5 @@
+'use strict'
+
 const menuItem = document.querySelectorAll(".menu__link");
 const menuSub = document.querySelectorAll(".menu.menu_sub");
 menuItem.forEach((elem) => {
@@ -8,7 +10,4 @@ menuItem.forEach((elem) => {
       return false;
     }
   }
-})
-
-
-
+});
