@@ -9,15 +9,17 @@ for (let i = 0; i < menuLink.length; i++) {
 
     let nextElem = menuLink[i].nextElementSibling;
 
-    if (nextElem && nextElem.classList.contains("menu_active")) {
-      nextElem.classList.remove("menu_active")
-      console.log(1000);
-      return false;
-    } else if (nextElem) {
+    if (!nextElem) {
+      return;
+    }
+
+    if (nextElem.classList.contains("menu_active")) {
+      nextElem.classList.remove("menu_active");
+    } else {
       menuSub.forEach(elem => elem.classList.remove("menu_active"));
       nextElem.classList.toggle("menu_active");
-      console.log(2000);
-      return false;
     }
-  } 
+
+    return false;
+  }
 }
