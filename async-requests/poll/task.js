@@ -1,3 +1,5 @@
+"use strict"
+
 const poll = document.querySelector(".poll");
 const pollTitle = document.getElementById("poll__title");
 const pollAnswers = document.getElementById("poll__answers");

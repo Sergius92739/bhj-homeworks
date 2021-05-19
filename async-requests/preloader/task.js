@@ -1,3 +1,5 @@
+"use strict"
+
 const items = document.getElementById("items");
 const loader = document.getElementById("loader");
 const xhr = new XMLHttpRequest();
