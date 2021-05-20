@@ -1,3 +1,5 @@
+"use strict"
+
 const modal = document.getElementById("subscribe-modal");
 const modalClose = modal.querySelector(".modal__close");
 

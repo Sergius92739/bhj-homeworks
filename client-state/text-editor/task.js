@@ -1,3 +1,5 @@
+"use strict"
+
 const editor = document.getElementById("editor");
 const clearButton = document.querySelector(".clear");
 
