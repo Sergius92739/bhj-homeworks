@@ -5,7 +5,7 @@ const pollTitle = document.getElementById("poll__title");
 const pollAnswers = document.getElementById("poll__answers");
 const xhr = new XMLHttpRequest();
 
-xhr.open("GET", "https://netology-slow-rest.herokuapp.com/poll.php");
+xhr.open("GET", "https://students.netoservices.ru/nestjs-backend/poll");
 xhr.onload = function () {
   if (xhr.readyState === 4 && xhr.status === 200) {
     const response = JSON.parse(xhr.responseText)
@@ -24,7 +24,7 @@ xhr.onload = function () {
     pollAnswers.addEventListener("click", e => {
       e.target.classList.contains("poll__answer") ? alert("Спасибо, ваш голос засчитан!") : "";
       const xhr1 = new XMLHttpRequest();
-      xhr1.open("POST", "https://netology-slow-rest.herokuapp.com/poll.php");
+      xhr1.open("POST", "https://students.netoservices.ru/nestjs-backend/poll");
       xhr1.onload = function () {
         if (xhr1.readyState === 4 && xhr1.status === 200) {
           pollAnswers.innerHTML = "";

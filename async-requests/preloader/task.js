@@ -6,7 +6,7 @@ const xhr = new XMLHttpRequest();
 
 checkLocalStorage();
 
-xhr.open("GET", "https://netology-slow-rest.herokuapp.com/");
+xhr.open("GET", "https://students.netoservices.ru/nestjs-backend/slow-get-courses");
 xhr.onreadystatechange = function () {
   // проверяем статус запроса и статус ответа 
   if (xhr.readyState === 4 && xhr.status === 200) {
