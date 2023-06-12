@@ -6,7 +6,7 @@ const form = document.getElementById("form");
 form.addEventListener("submit", e => {
   e.preventDefault();
   const xhr = new XMLHttpRequest();
-  xhr.open("POST", "https://netology-slow-rest.herokuapp.com/upload.php");
+  xhr.open("POST", "https://students.netoservices.ru/nestjs-backend/upload");
   xhr.setRequestHeader("Content-Type", "multipart/form-data");
   xhr.upload.onprogress = function (e) {
     progress.value = e.loaded / e.total;
